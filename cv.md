@@ -1,22 +1,21 @@
-# [rsschool-cv](https://barvinko.github.io/)
-![I](/assets/img/Vlad.jpg )
-# Vladyslav Barvinko
+![](https://github.com/Barvinko/rsschool-cv/blob/gh-pages/assets/img/Vlad.jpg)
+# [Vladyslav Barvinko](https://barvinko.github.io/)
 ## CONTACTS
-**Phone(Telegram, Viber):** +38 (093) 076 3429 
-**Email:** vlad.barvinko@gmail.com
-**GitHub:** [https://github.com/Barvinko](https://github.com/Barvinko)
+**Phone(Telegram, Viber):** +38 (093) 076 3429<br> 
+**Email:** vlad.barvinko@gmail.com<br>
+**GitHub:** [https://github.com/Barvinko](https://github.com/Barvinko)<br>
 **Linkedin:** [https://www.linkedin.com/in/vlad-barvinko-a445851a9](https://www.linkedin.com/in/vlad-barvinko-a445851a9)
 ## SKILLS
-HTML/CSS/SASS
-Bootstrap5
-JS/TS(basic)/React(basic)
-WebPack
-Node.js/Express
-MongoDB/Moongoose
-Git
-VS Code
+HTML/CSS/SASS<br>
+Bootstrap5<br>
+JS/TS(basic)/React(basic)<br>
+WebPack<br>
+Node.js/Express<br>
+MongoDB/Moongoose<br>
+Git<br>
+VS Code<br>
 #### Languages
-Ukrainian, Russian - С2
+Ukrainian, Russian - С2<br>
 English - B1
 ## BRIEFLY ABOUT MY EXPIRIENCE
 Highlighted such developed projects:
@@ -32,25 +31,22 @@ Highlighted such developed projects:
     -   Express.js;
     -   express-session;
     -   MongoDB;
-    -   Mongoose.
+    -   Mongoose.<br>
+
 ## EDUCATION
-**Dnipro University of Technology,** Bachelor
-FIT, 121-Software Engineering 2021
-**University of Customs and Finance,** Master`s degree
+**Dnipro University of Technology,** Bachelor<br>
+FIT, 121-Software Engineering 2021<br>
+**University of Customs and Finance,** Master`s degree<br>
 FIT, 122-Computer Science 2023
 ## COURSES
-**ORTDnipro**
-Beginning of web development and programming
-[https://ortdnipro.org/web/](https://ortdnipro.org/web/)
-**ORTDnipro**
-JavaScript in web-development
-[https://ortdnipro.org/js/](https://ortdnipro.org/js/)
-**Indigo**
-English
-[https://indigo-dnepr.com/](https://indigo-dnepr.com/)
-**EPAM**
-IT Marathon
-[https://certificates.epam.com/certificates/b6eb2a1c-f136-455e-a7b1-257767e8303b](https://certificates.epam.com/certificates/b6eb2a1c-f136-455e-a7b1-257767e8303b)
+&nbsp;&nbsp;&nbsp;**ORTDnipro**<br>
+Beginning of web development and programming: [https://ortdnipro.org/web/](https://ortdnipro.org/web/)<br>
+&nbsp;&nbsp;&nbsp;**ORTDnipro**<br>
+JavaScript in web-development: [https://ortdnipro.org/js/](https://ortdnipro.org/js/)<br>
+&nbsp;&nbsp;&nbsp;**Indigo**<br>
+English: [https://indigo-dnepr.com/](https://indigo-dnepr.com/)<br>
+&nbsp;&nbsp;&nbsp;**EPAM**<br>
+IT Marathon [https://certificates.epam.com/certificates/b6eb2a1c-f136-455e-a7b1-257767e8303b](https://certificates.epam.com/certificates/b6eb2a1c-f136-455e-a7b1-257767e8303b)
 ## CODE EXAMPLES
 The example implements conversion between distance units with support for metric and imperial systems of measures. By default there are rules for conversion: meters (m), centimeters (cm), inches (in) and feet (ft), and support conversion between any units. Conversion rules are stored in JSON in the form:
 ```
