@@ -1,4 +1,4 @@
-![](https://github.com/Barvinko/rsschool-cv/blob/gh-pages/assets/img/Vlad.jpg)
+![](https://barvinko.github.io/rsschool-cv/assets/img/Vlad.jpg)
 # [Vladyslav Barvinko](https://barvinko.github.io/)
 ## CONTACTS
 **Phone(Telegram, Viber):** +38 (093) 076 3429<br> 
