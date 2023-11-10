@@ -48,11 +48,11 @@ English: [https://indigo-dnepr.com/](https://indigo-dnepr.com/)<br>
 &nbsp;&nbsp;&nbsp;**EPAM**<br>
 IT Marathon [https://certificates.epam.com/certificates/b6eb2a1c-f136-455e-a7b1-257767e8303b](https://certificates.epam.com/certificates/b6eb2a1c-f136-455e-a7b1-257767e8303b)
 ## CODE EXAMPLES
-The example implements conversion between distance units with support for metric and imperial systems of measures. By default there are rules for conversion: meters (m), centimeters (cm), inches (in) and feet (ft), and support conversion between any units. Conversion rules are stored in JSON in the form:
+&nbsp;&nbsp;&nbsp;The example implements conversion between distance units with support for metric and imperial systems of measures. By default there are rules for conversion: meters (m), centimeters (cm), inches (in) and feet (ft), and support conversion between any units. Conversion rules are stored in JSON in the form:
 ```
 {`${name unit}`: equivalent,...}
 ```
-It is also possible to expand the list of supported units. As an example, the code adds yard."yard" is added as an example. The input data is sent as JSON file, then it is checked using a regular expression and according to the available units. Example of input data format:
+&nbsp;&nbsp;&nbsp;It is also possible to expand the list of supported units. As an example, the code adds yard."yard" is added as an example. The input data is sent as JSON file, then it is checked using a regular expression and according to the available units. Example of input data format:
 ```
 [{"distance": {"unit": "km", "value": 1}, "convert_to": "m"},...]
 ```
