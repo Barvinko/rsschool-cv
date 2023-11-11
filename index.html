@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main class="container">
+        <div id="personalІnformation">
+            <img id="mainFoto" src="https://barvinko.github.io/rsschool-cv/assets/img/Vlad.jpg" alt="">
+            <h1 style="font-size: 2rem;"><a href="https://barvinko.github.io/">Vladyslav Barvinko</a></h1>
+            <h2 id="contacts">CONTACTS</h2>
+            <div>
+                <strong>Phone(Telegram, Viber):</strong> +38 (093) 076 3429<br> 
+                <strong>Email:</strong> vlad.barvinko@gmail.com<br>
+                <strong>GitHub:</strong> <a href="https://github.com/Barvinko">https://github.com/Barvinko</a><br>
+                <strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/vlad-barvinko-a445851a9">https://www.linkedin.com/in/vlad-barvinko-a445851a9</a>
+            </div>
+            <h2 id="skills">SKILLS</h2>
+            <div>
+                HTML/CSS/SASS<br>
+                Bootstrap5<br>
+                JS/TS(basic)/React(basic)<br>
+                WebPack<br>
+                Node.js/Express<br>
+                MongoDB/Moongoose<br>
+                Git<br>
+                VS Code<br>
+                <h3 class="mt-1">Languages</h4>
+                Ukrainian, Russian - C2<br>
+                English - B1
+            </div>
+            <h2 id="briefly-about-my-expirience">BRIEFLY ABOUT MY EXPIRIENCE</h2>
+            <p>Highlighted such developed projects:</p>
+            <ul>
+                <li>Layout of clothing store using Grid;</li>
+                <li>Algorithm for checking bank cards and TIN;</li>
+                <li>Algorithm for finding location of nearest ATMs to user&#39;s from the Privat Bank API;</li>
+                <li>News site with current news from AIP;</li>
+                <li>Searching in text, using regular expression.;</li>
+                <li>Displaying countries, currencies, flags, their neighbors(whose flags were found using algorithm) from dataCountry API, on Vue.js;</li>
+                <li>Tasks of genetic algorithms;</li>
+                <li>Website which implements secure messaging system with encryption on eleptic curves. Was implements secure registration, authorization, unique encryption for each message. I used tech stack on this project:
+                    <ul>
+                        <li>Node.js;</li>
+                        <li>Express.js;</li>
+                        <li>express-session;</li>
+                        <li>MongoDB;</li>
+                        <li>Mongoose.<br></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div id="educationІnformation">
+            <h2 id="education">EDUCATION</h2>
+            <div><strong>Dnipro University of Technology,</strong> Bachelor<br>
+            FIT, 121-Software Engineering 2021<br>
+            <strong>University of Customs and Finance,</strong> Master`s degree<br>
+            FIT, 122-Computer Science 2023</div>
+            <h2 id="courses">COURSES</h2>
+            <div>
+                <strong class="course">ORTDnipro</strong><br>
+                Beginning of web development and programming: <a href="https://ortdnipro.org/web/">https://ortdnipro.org/web/</a><br>
+                <strong class="course">ORTDnipro</strong><br>
+                JavaScript in web-development: <a href="https://ortdnipro.org/js/">https://ortdnipro.org/js/</a><br>
+                <strong class="course">Indigo</strong><br>
+                English: <a href="https://indigo-dnepr.com/">https://indigo-dnepr.com/</a><br>
+                <strong class="course">EPAM</strong><br>
+                IT Marathon <a href="https://certificates.epam.com/certificates/b6eb2a1c-f136-455e-a7b1-257767e8303b">https://certificates.epam.com/certificates/b6eb2a1c-f136-455e-a7b1-257767e8303b</a>
+            </div>
+            <h2 id="code-examples">CODE EXAMPLES</h2>
+            <p>
+                The example implements conversion between distance units with support for metric and imperial systems of measures. By default there are rules for conversion: meters (m), centimeters (cm), inches (in) and feet (ft), and support conversion between any units. Conversion rules are stored in JSON in the form:
+            </p>
+            <pre><code>{`${name unit}`: equivalent,...}</code></pre>
+            
+            <p>
+                It is also possible to expand the list of supported units. As an example, the code adds yard.&quot;yard&quot; is added as an example. The input data is sent as JSON file, then it is checked using a regular expression and according to the available units. Example of input data format:
+            </p>
+            <pre><code>[{<span class="hljs-attr">"distance"</span>: {<span class="hljs-attr">"unit"</span>: <span class="hljs-string">"km"</span>, <span class="hljs-attr">"value"</span>: <span class="hljs-number">1</span>}, <span class="hljs-attr">"convert_to"</span>: <span class="hljs-string">"m"</span>},...]</code>s</pre>
+            <h3 id="example">Example</h3>
+            <pre><code>(<span class="hljs-name">async</span>  function () {
+    //loading dada about units from jsons file
+    let  units  =  await  fetch(<span class="hljs-name">'./assets/data/units.json'</span>)<span class="hljs-comment">;</span>
+    let  json  =  await  fetch(<span class="hljs-name">'./assets/data/data.json'</span>)
+    units  =  await  units.json()<span class="hljs-comment">;</span>
+    json  =  await  json.json()<span class="hljs-comment">;</span>
+    console.log(<span class="hljs-name">units</span>,json)<span class="hljs-comment">;</span>
+
+    //Add new unit
+    addUnit(<span class="hljs-name">units</span>,<span class="hljs-string">"yd"</span>,<span class="hljs-number">91.44</span>)
+
+    //Regular expression
+    let  chek  = /(\{<span class="hljs-string">"distance"</span>:\{<span class="hljs-string">"unit"</span>:<span class="hljs-string">"\w*"</span>\,<span class="hljs-string">"value"</span>:\d*\}\,<span class="hljs-string">"convert_to"</span>:<span class="hljs-string">"\w*"</span>\})/gm
+    json  =  JSON.stringify(<span class="hljs-name">json</span>)
+    json  =  json.match(<span class="hljs-name">chek</span>)<span class="hljs-comment">;</span>
+    console.log(<span class="hljs-name">json</span>)<span class="hljs-comment">;</span>
+
+    //Create array for answers
+    let  featback  =  new  Array()<span class="hljs-comment">;</span>
+    for (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span>  item  of  json) {
+        item  =  JSON.parse(<span class="hljs-name">item</span>)<span class="hljs-comment">;</span>
+        if (<span class="hljs-name">!</span>(`${item.distance.unit}`  in  units  ||  !`${item.convert_to}`  in  units) ||  typeof(<span class="hljs-name">+item.distance.value</span>) !=  'number') {
+            console.log(`this no right`,item)<span class="hljs-comment">;</span>
+            continue;
+        }
+
+        let  value  =  item.distance.value;
+        let  equvivalentFromUnit  =  units[item.distance.unit]<span class="hljs-comment">;</span>
+        let  equvalentToUnit  =  units[item.convert_to]<span class="hljs-comment">;</span>
+
+        value  = (<span class="hljs-name">equvivalentFromUnit</span>  *  value) /  equvalentToUnit;
+
+        featback.push({
+            'unit':  item.convert_to,
+            'value':  +value.toFixed(<span class="hljs-number">2</span>)
+        })
+
+    }
+
+    featback  =  JSON.stringify(<span class="hljs-name">featback</span>)<span class="hljs-comment">;</span>
+    console.log(<span class="hljs-name">featback</span>)<span class="hljs-comment">;</span>
+}())</code></pre>
+        </div>
+    </main>
+</body>
+</html>
