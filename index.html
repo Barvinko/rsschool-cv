@@ -14,7 +14,7 @@
             <h1><a href="https://barvinko.github.io/">Vladyslav Barvinko</a></h1>
             <h2 id="contacts">CONTACTS</h2>
             <div>
-                <strong>Phone(Telegram, Viber):</strong> +38 (093) 076 3429<br> 
+                <strong>Phone(Telegram, Viber):</strong> +38 (093) 076 3429<br>
                 <strong>Email:</strong> vlad.barvinko@gmail.com<br>
                 <strong>GitHub:</strong> <a href="https://github.com/Barvinko">https://github.com/Barvinko</a><br>
                 <strong>Linkedin:</strong> <a href="https://www.linkedin.com/in/vlad-barvinko-a445851a9">https://www.linkedin.com/in/vlad-barvinko-a445851a9</a>
@@ -76,9 +76,8 @@
                 The example implements conversion between distance units with support for metric and imperial systems of measures. By default there are rules for conversion: meters (m), centimeters (cm), inches (in) and feet (ft), and support conversion between any units. Conversion rules are stored in JSON in the form:
             </p>
             <pre><code>{`${name unit}`: equivalent,...}</code></pre>
-            
-            <p>
-                It is also possible to expand the list of supported units. As an example, the code adds yard.&quot;yard&quot; is added as an example. The input data is sent as JSON file, then it is checked using a regular expression and according to the available units. Example of input data format:
+
+            <p>It is also possible to expand the list of supported units. As an example, the code adds yard.&quot;yard&quot; is added as an example. The input data is sent as JSON file, then it is checked using a regular expression and according to the available units. Example of input data format:
             </p>
             <pre><code>[{<span class="hljsAttr">"distance"</span>: {<span class="hljsAttr">"unit"</span>: <span class="hljsString">"km"</span>, <span class="hljsAttr">"value"</span>: <span class="hljsNumber">1</span>}, <span class="hljsAttr">"convert_to"</span>: <span class="hljsString">"m"</span>},...]</code>s</pre>
             <h3 id="example">Example</h3>
@@ -89,16 +88,13 @@
     units  =  await  units.json()<span class="hljsComment">;</span>
     json  =  await  json.json()<span class="hljsComment">;</span>
     console.log(<span class="hljsName">units</span>,json)<span class="hljsComment">;</span>
-
     //Add new unit
     addUnit(<span class="hljsName">units</span>,<span class="hljsString">"yd"</span>,<span class="hljsNumber">91.44</span>)
-
     //Regular expression
     let  chek  = /(\{<span class="hljsString">"distance"</span>:\{<span class="hljsString">"unit"</span>:<span class="hljsString">"\w*"</span>\,<span class="hljsString">"value"</span>:\d*\}\,<span class="hljsString">"convert_to"</span>:<span class="hljsString">"\w*"</span>\})/gm
     json  =  JSON.stringify(<span class="hljsName">json</span>)
     json  =  json.match(<span class="hljsName">chek</span>)<span class="hljsComment">;</span>
     console.log(<span class="hljsName">json</span>)<span class="hljsComment">;</span>
-
     //Create array for answers
     let  featback  =  new  Array()<span class="hljsComment">;</span>
     for (<span class="hljsName"><span class="hljsBuiltinName">let</span></span>  item  of  json) {
@@ -107,7 +103,6 @@
             console.log(`this no right`,item)<span class="hljsComment">;</span>
             continue;
         }
-
         let  value  =  item.distance.value;
         let  equvivalentFromUnit  =  units[item.distance.unit]<span class="hljsComment">;</span>
         let  equvalentToUnit  =  units[item.convert_to]<span class="hljsComment">;</span>
@@ -119,7 +114,6 @@
             'value':  +value.toFixed(<span class="hljsNumber">2</span>)
         })
     }
-
     featback  =  JSON.stringify(<span class="hljsName">featback</span>)<span class="hljsComment">;</span>
     console.log(<span class="hljsName">featback</span>)<span class="hljsComment">;</span>
 }())</code></pre>
