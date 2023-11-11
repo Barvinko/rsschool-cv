@@ -1,0 +1,33 @@
+body{
+    font-size: 15px;
+}
+
+main{
+    margin-top: 25px;
+}
+
+#mainFoto{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 10rem;
+}
+pre {
+    background-color: rgba(128, 128, 128, 0.3);
+    border-radius: 5px;
+    padding: 3px;
+}
+p{
+    text-indent: 1rem;
+}
+.course{
+    margin-left: 1rem;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.2rem;
+}
