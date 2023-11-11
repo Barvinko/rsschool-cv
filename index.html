@@ -9,7 +9,7 @@
 </head>
 <body>
     <main class="container">
-        <div id="personalІnformation">
+        <div id="personalInformation">
             <img id="mainFoto" src="https://barvinko.github.io/rsschool-cv/assets/img/Vlad.jpg" alt="">
             <h1><a href="https://barvinko.github.io/">Vladyslav Barvinko</a></h1>
             <h2 id="contacts">CONTACTS</h2>
@@ -29,7 +29,7 @@
                 MongoDB/Moongoose<br>
                 Git<br>
                 VS Code<br>
-                <h3 class="mt-1">Languages</h3>
+                <h3>Languages</h3>
                 Ukrainian, Russian - C2<br>
                 English - B1
             </div>
@@ -54,7 +54,7 @@
                 </li>
             </ul>
         </div>
-        <div id="educationІnformation">
+        <div id="educationInformation">
             <h2 id="education">EDUCATION</h2>
             <div><strong>Dnipro University of Technology,</strong> Bachelor<br>
             FIT, 121-Software Engineering 2021<br>
@@ -80,49 +80,48 @@
             <p>
                 It is also possible to expand the list of supported units. As an example, the code adds yard.&quot;yard&quot; is added as an example. The input data is sent as JSON file, then it is checked using a regular expression and according to the available units. Example of input data format:
             </p>
-            <pre><code>[{<span class="hljs-attr">"distance"</span>: {<span class="hljs-attr">"unit"</span>: <span class="hljs-string">"km"</span>, <span class="hljs-attr">"value"</span>: <span class="hljs-number">1</span>}, <span class="hljs-attr">"convert_to"</span>: <span class="hljs-string">"m"</span>},...]</code>s</pre>
+            <pre><code>[{<span class="hljsAttr">"distance"</span>: {<span class="hljsAttr">"unit"</span>: <span class="hljsString">"km"</span>, <span class="hljsAttr">"value"</span>: <span class="hljsNumber">1</span>}, <span class="hljsAttr">"convert_to"</span>: <span class="hljsString">"m"</span>},...]</code>s</pre>
             <h3 id="example">Example</h3>
-            <pre><code>(<span class="hljs-name">async</span>  function () {
+            <pre><code>(<span class="hljsName">async</span>  function () {
     //loading dada about units from jsons file
-    let  units  =  await  fetch(<span class="hljs-name">'./assets/data/units.json'</span>)<span class="hljs-comment">;</span>
-    let  json  =  await  fetch(<span class="hljs-name">'./assets/data/data.json'</span>)
-    units  =  await  units.json()<span class="hljs-comment">;</span>
-    json  =  await  json.json()<span class="hljs-comment">;</span>
-    console.log(<span class="hljs-name">units</span>,json)<span class="hljs-comment">;</span>
+    let  units  =  await  fetch(<span class="hljsName">'./assets/data/units.json'</span>)<span class="hljsComment">;</span>
+    let  json  =  await  fetch(<span class="hljsName">'./assets/data/data.json'</span>)
+    units  =  await  units.json()<span class="hljsComment">;</span>
+    json  =  await  json.json()<span class="hljsComment">;</span>
+    console.log(<span class="hljsName">units</span>,json)<span class="hljsComment">;</span>
 
     //Add new unit
-    addUnit(<span class="hljs-name">units</span>,<span class="hljs-string">"yd"</span>,<span class="hljs-number">91.44</span>)
+    addUnit(<span class="hljsName">units</span>,<span class="hljsString">"yd"</span>,<span class="hljsNumber">91.44</span>)
 
     //Regular expression
-    let  chek  = /(\{<span class="hljs-string">"distance"</span>:\{<span class="hljs-string">"unit"</span>:<span class="hljs-string">"\w*"</span>\,<span class="hljs-string">"value"</span>:\d*\}\,<span class="hljs-string">"convert_to"</span>:<span class="hljs-string">"\w*"</span>\})/gm
-    json  =  JSON.stringify(<span class="hljs-name">json</span>)
-    json  =  json.match(<span class="hljs-name">chek</span>)<span class="hljs-comment">;</span>
-    console.log(<span class="hljs-name">json</span>)<span class="hljs-comment">;</span>
+    let  chek  = /(\{<span class="hljsString">"distance"</span>:\{<span class="hljsString">"unit"</span>:<span class="hljsString">"\w*"</span>\,<span class="hljsString">"value"</span>:\d*\}\,<span class="hljsString">"convert_to"</span>:<span class="hljsString">"\w*"</span>\})/gm
+    json  =  JSON.stringify(<span class="hljsName">json</span>)
+    json  =  json.match(<span class="hljsName">chek</span>)<span class="hljsComment">;</span>
+    console.log(<span class="hljsName">json</span>)<span class="hljsComment">;</span>
 
     //Create array for answers
-    let  featback  =  new  Array()<span class="hljs-comment">;</span>
-    for (<span class="hljs-name"><span class="hljs-builtin-name">let</span></span>  item  of  json) {
-        item  =  JSON.parse(<span class="hljs-name">item</span>)<span class="hljs-comment">;</span>
-        if (<span class="hljs-name">!</span>(`${item.distance.unit}`  in  units  ||  !`${item.convert_to}`  in  units) ||  typeof(<span class="hljs-name">+item.distance.value</span>) !=  'number') {
-            console.log(`this no right`,item)<span class="hljs-comment">;</span>
+    let  featback  =  new  Array()<span class="hljsComment">;</span>
+    for (<span class="hljsName"><span class="hljsBuiltinName">let</span></span>  item  of  json) {
+        item  =  JSON.parse(<span class="hljsName">item</span>)<span class="hljsComment">;</span>
+        if (<span class="hljsName">!</span>(`${item.distance.unit}`  in  units  ||  !`${item.convert_to}`  in  units) ||  typeof(<span class="hljsName">+item.distance.value</span>) !=  'number') {
+            console.log(`this no right`,item)<span class="hljsComment">;</span>
             continue;
         }
 
         let  value  =  item.distance.value;
-        let  equvivalentFromUnit  =  units[item.distance.unit]<span class="hljs-comment">;</span>
-        let  equvalentToUnit  =  units[item.convert_to]<span class="hljs-comment">;</span>
+        let  equvivalentFromUnit  =  units[item.distance.unit]<span class="hljsComment">;</span>
+        let  equvalentToUnit  =  units[item.convert_to]<span class="hljsComment">;</span>
 
-        value  = (<span class="hljs-name">equvivalentFromUnit</span>  *  value) /  equvalentToUnit;
+        value  = (<span class="hljsName">equvivalentFromUnit</span>  *  value) /  equvalentToUnit;
 
         featback.push({
             'unit':  item.convert_to,
-            'value':  +value.toFixed(<span class="hljs-number">2</span>)
+            'value':  +value.toFixed(<span class="hljsNumber">2</span>)
         })
-
     }
 
-    featback  =  JSON.stringify(<span class="hljs-name">featback</span>)<span class="hljs-comment">;</span>
-    console.log(<span class="hljs-name">featback</span>)<span class="hljs-comment">;</span>
+    featback  =  JSON.stringify(<span class="hljsName">featback</span>)<span class="hljsComment">;</span>
+    console.log(<span class="hljsName">featback</span>)<span class="hljsComment">;</span>
 }())</code></pre>
         </div>
     </main>
